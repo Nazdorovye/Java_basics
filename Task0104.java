@@ -10,21 +10,20 @@
  *  Copyright Vjazovcevs Stanislavs, 2020
  */
 
-/**
- * This class is associated with the third task of the first seminar
- */
-public class Task0103 {
-  public static void main(String[] args) {
-    int a = 9;
-    int b = 5;
-    int sum = a + b;
-    int dif = a - b;
-    int prod = a * b;
-    float quot = (float)a / (float)b;
-    float avg = (float)sum / 2.f;
-    int remain = a % b;
+import java.util.Scanner;
 
-    System.out.printf("a = %d, b = %d\na + b = %d\na - b = %d\na * b = %d\na / b = %.2f\nAverage" +
-        " = %.2f\na %% b = %d", a, b, sum, dif, prod, quot, avg, remain);
+/**
+ * This class is associated with the fourth task of the first seminar
+ */
+public class Task0104 {
+  public static void main(String[] args) {
+    Scanner is = new Scanner(System.in);
+
+    System.out.print("Type in your name -> ");
+    String name = is.nextLine();
+
+    System.out.printf("Hello, %s!\n", name);
+
+    is.close();
   }
 }

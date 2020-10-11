@@ -13,7 +13,6 @@
 /**
  * This class is associated with the second task of the first seminar
  */
-
 public class Task0102 {
   public static void main(String[] args) {
     int a = 5;
