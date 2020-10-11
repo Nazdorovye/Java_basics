@@ -27,14 +27,18 @@ public class Task0203 {
       if (!askAction) {
         System.out.print("Type in a radius -> ");
 
-        if (is.hasNextFloat()) radius = is.nextFloat();
-        else {
-          System.out.println("Invalid input. Try again...\n");
-          is.nextLine();
-          continue;
+        if (is.hasNextFloat()) {
+          radius = is.nextFloat();
+
+          if (radius > 0) {
+            askAction = true;
+            continue;
+          }
         }
 
-        askAction = true;
+        System.out.println("Invalid input. Try again...\n");
+        is.nextLine();
+        continue;
       }
       
       System.out.print("Select option to calculate: circle area (aA); circumference (cC) -> ");
@@ -42,11 +46,11 @@ public class Task0203 {
       
       switch (action.toLowerCase()) {
         case "a":
-          System.out.printf("Circle R = %.3f, Area is: %.3f\n", 
+          System.out.printf("Circle R = %f, Area is: %f\n", 
                   radius, Math.PI * Math.pow(radius, 2.f));
           break;
         case "c":
-          System.out.printf("Circle R = %.3f, Circumference is: %.3f\n", 
+          System.out.printf("Circle R = %f, Circumference is: %f\n", 
                   radius, Math.PI * radius + radius);
           break;
         default:
