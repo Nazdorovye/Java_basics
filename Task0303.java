@@ -38,21 +38,21 @@ public class Task0303 {
     if (nums[1] == 0) {
       System.out.printf("\n%d^%d = %d\n", nums[0], nums[1], 1);
     } else if (nums[1] > 0) {
-        long result = nums[0];
+      long result = nums[0];
 
-        for (int i = 1; i < nums[1]; i++) {
-          result *= nums[0];
-        }
-
-        System.out.printf("\n%d^%d = %d\n", nums[0], nums[1], result);
+      for (int i = 1; i < nums[1]; i++) {
+        result *= nums[0];
+      }
+      
+      System.out.printf("\n%d^%d = %d\n", nums[0], nums[1], result);
     } else {
-        double result = nums[0];
+      double result = nums[0];
 
-        for (int i = -1; i > nums[1]; i--) {
-          result *= nums[0];
-        }
-
-        System.out.printf("\n%d^%d = %g\n", nums[0], nums[1], 1.f / result);
+      for (int i = -1; i > nums[1]; i--) {
+        result *= nums[0];
+      }
+      
+      System.out.printf("\n%d^%d = %g\n", nums[0], nums[1], 1.f / result);
     }
 
     is.close();
