@@ -23,10 +23,16 @@ public class Task0202 {
     while (num < 9999 || num > 99999) {
       System.out.print("Type in an 5-digit integer -> ");
 
-      if (is.hasNextInt()) num = is.nextInt();
-      else System.out.println("Invalid input. Try again...\n");
+      if (is.hasNextInt()) {
+        num = is.nextInt();
+      } else {
+        System.out.println("Invalid input. Try again...\n");
+      }
       
-      if (num < 9999 || num > 99999) System.out.println("Invalid input. Try again...\n");
+      if (num < 9999 || num > 99999) {
+        System.out.println("Invalid input. Try again...\n");
+      }
+
       is.nextLine();
     }
 
@@ -37,12 +43,14 @@ public class Task0202 {
     }
 
     System.out.print("Digits:");
-    for (int d : digits)
+    for (int d : digits) {
       System.out.printf(" %d", d);
+    }
 
     System.out.print("\nInversed digits:");
-    for (int i = 4; i > -1; i--)
+    for (int i = 4; i > -1; i--) {
       System.out.printf(" %d", digits[i]);
+    }
 
     System.out.print("\n");
 

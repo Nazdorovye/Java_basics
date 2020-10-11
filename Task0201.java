@@ -25,15 +25,22 @@ public class Task0201 {
     while (idx < 2) {
       System.out.printf("Type in an integer #%d -> ", idx + 1);
 
-      if (is.hasNextInt()) nums[idx++] = is.nextInt();
-      else System.out.println("Invalid input. Try again...\n");
+      if (is.hasNextInt()) {
+        nums[idx++] = is.nextInt();
+      } else {
+        System.out.println("Invalid input. Try again...\n");
+      }
       
       is.nextLine();
     }
 
-    if (nums[0] < nums[1]) System.out.printf("%d < %d\n", nums[0], nums[1]);
-    else if (nums[0] > nums[1]) System.out.printf("%d > %d\n", nums[0], nums[1]);
-    else System.out.printf("%d == %d\n", nums[0], nums[1]);
+    if (nums[0] < nums[1]) {
+      System.out.printf("%d < %d\n", nums[0], nums[1]);
+    } else if (nums[0] > nums[1]) {
+      System.out.printf("%d > %d\n", nums[0], nums[1]);
+    } else {
+      System.out.printf("%d == %d\n", nums[0], nums[1]);
+    }
 
     is.close();
   }

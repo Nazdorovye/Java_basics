@@ -25,8 +25,11 @@ public class Task0105 {
     while (idx < 2) {
       System.out.printf("Type in an integer #%d -> ", idx + 1);
 
-      if (is.hasNextInt()) nums[idx++] = is.nextInt();
-      else System.out.println("Invalid input. Try again...\n");
+      if (is.hasNextInt()) {
+        nums[idx++] = is.nextInt();
+      } else {
+        System.out.println("Invalid input. Try again...\n");
+      }
       
       is.nextLine();
     }

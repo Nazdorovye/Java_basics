@@ -25,8 +25,9 @@ public class Task0205 {
 
       if (is.hasNextFloat()) {
         hoursWorked = is.nextFloat();
-        if (hoursWorked > 0.f && hoursWorked <= 50.f)
+        if (hoursWorked > 0.f && hoursWorked <= 50.f) {
           break;
+        }
       }
 
       System.out.println("Invalid input. Try again...\n");
@@ -35,8 +36,11 @@ public class Task0205 {
 
     float salary = 0.f;
 
-    if (hoursWorked <= 40.f) salary = hoursWorked * 4.f;
-    else salary = 160.f + 6.f * Math.abs(40.f - hoursWorked);
+    if (hoursWorked <= 40.f) {
+      salary = hoursWorked * 4.f;
+    } else {
+      salary = 160.f + 6.f * Math.abs(40.f - hoursWorked);
+    }
 
     System.out.printf("Your salary is: %.2f\n", salary);
 
