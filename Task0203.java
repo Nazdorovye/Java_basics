@@ -19,9 +19,11 @@ import java.util.Scanner;
 public class Task0203 {
   public static void main(String[] args) {
     Scanner is = new Scanner(System.in);
+    boolean askAction = false;
     float radius = 0.f;
     String action = "";
-    boolean askAction = false;
+
+    System.out.println("This app will calculate circle area or circumference for given radius\n");
 
     while (true) {
       if (!askAction) {
@@ -46,11 +48,11 @@ public class Task0203 {
       
       switch (action.toLowerCase()) {
         case "a":
-          System.out.printf("Circle R = %f, Area is: %f\n", 
+          System.out.printf("\nCircle R = %f, Area is: %f\n", 
                   radius, Math.PI * Math.pow(radius, 2.f));
           break;
         case "c":
-          System.out.printf("Circle R = %f, Circumference is: %f\n", 
+          System.out.printf("\nCircle R = %f, Circumference is: %f\n", 
                   radius, Math.PI * radius + radius);
           break;
         default:

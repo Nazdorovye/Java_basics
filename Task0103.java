@@ -24,6 +24,8 @@ public class Task0103 {
     float avg = (float)sum / 2.f;
     int remain = a % b;
 
+    System.out.println("This app outputs some calculation\n");
+
     System.out.printf("a = %d, b = %d\na + b = %d\na - b = %d\na * b = %d\na / b = %.2f\nAverage" +
         " = %.2f\na %% b = %d", a, b, sum, dif, prod, quot, avg, remain);
   }

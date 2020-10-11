@@ -18,9 +18,10 @@ import java.util.Scanner;
 public class Task0105 {
   public static void main(String[] args) {
     Scanner is = new Scanner(System.in);
-
-    byte idx = 0;
     int[] nums = new int[2];
+    byte idx = 0;
+
+    System.out.println("This app will take in two integers and output some calculations\n");
 
     while (idx < 2) {
       System.out.printf("Type in an integer #%d -> ", idx + 1);
@@ -34,7 +35,7 @@ public class Task0105 {
       is.nextLine();
     }
 
-    System.out.printf("%d + %d = %d\n%d - %d = %d\n%d * %d = %d\n%d / %d = %.3f\nAverage = %.3f\n",
+    System.out.printf("\n%d + %d = %d\n%d - %d = %d\n%d * %d = %d\n%d / %d = %.3f\nAvg = %.3f\n",
         nums[0], nums[1], nums[0] + nums[1],
         nums[0], nums[1], nums[0] - nums[1],
         nums[0], nums[1], nums[0] * nums[1],

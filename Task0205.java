@@ -20,6 +20,9 @@ public class Task0205 {
     Scanner is = new Scanner(System.in);
     float hoursWorked = 0.f;
 
+    System.out.println("This app will calculate salary:\n\tHours <= 40 : 4.00 EUR/h\n\t" +
+        "Hours >  40 : 160 EUR + 6.00 EUR/h overtime\n");
+
     while (true) {
       System.out.print("Type in number of hours worked -> ");
 

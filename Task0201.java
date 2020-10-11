@@ -18,9 +18,10 @@ import java.util.Scanner;
 public class Task0201 {
   public static void main(String[] args) {
     Scanner is = new Scanner(System.in);
-
-    byte idx = 0;
     int[] nums = new int[2];
+    byte idx = 0;
+
+    System.out.println("This app will take in two integers and compare them to each other\n");
 
     while (idx < 2) {
       System.out.printf("Type in an integer #%d -> ", idx + 1);
@@ -35,11 +36,11 @@ public class Task0201 {
     }
 
     if (nums[0] < nums[1]) {
-      System.out.printf("%d < %d\n", nums[0], nums[1]);
+      System.out.printf("\n%d < %d\n", nums[0], nums[1]);
     } else if (nums[0] > nums[1]) {
-      System.out.printf("%d > %d\n", nums[0], nums[1]);
+      System.out.printf("\n%d > %d\n", nums[0], nums[1]);
     } else {
-      System.out.printf("%d == %d\n", nums[0], nums[1]);
+      System.out.printf("\n%d == %d\n", nums[0], nums[1]);
     }
 
     is.close();

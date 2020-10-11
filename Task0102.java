@@ -26,6 +26,8 @@ public class Task0102 {
     byte i = (byte)h;
     long j = Long.MAX_VALUE;
 
+    System.out.println("This app outputs some basic types\n");
+
     System.out.printf("a = %d\nb = %.2f\nc = %b\nd = %c\ne = %d\nf = %d\ng = %c\ni = %d\nj = %d\n",
         a, b, c, d, e, f, g, i, j);
   }

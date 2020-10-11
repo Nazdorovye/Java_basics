@@ -20,6 +20,8 @@ public class Task0202 {
     Scanner is = new Scanner(System.in);
     int num = 0;
 
+    System.out.println("This app will take a 5-digit number and print it in forward and reverse\n");
+
     while (num < 9999 || num > 99999) {
       System.out.print("Type in an 5-digit integer -> ");
 
@@ -42,7 +44,7 @@ public class Task0202 {
       num /= 10;
     }
 
-    System.out.print("Digits:");
+    System.out.print("\nDigits:");
     for (int d : digits) {
       System.out.printf(" %d", d);
     }

@@ -19,6 +19,8 @@ public class Task0104 {
   public static void main(String[] args) {
     Scanner is = new Scanner(System.in);
 
+    System.out.println("This app will take your name and will welcome you\n");
+
     System.out.print("Type in your name -> ");
     String name = is.nextLine();
 
