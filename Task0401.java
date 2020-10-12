@@ -42,6 +42,8 @@ public class Task0401 {
     Scanner is = new Scanner(System.in);
     int[] numArray;
 
+    System.out.println("This app takes an array of ints and does some calculations\n");
+
     while (true) {
       System.out.print("Type in space-separated integer array. Invalid items will be skipped\n-> ");
       numArray = extractIntegers(is.nextLine());
