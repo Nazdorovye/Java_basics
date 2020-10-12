@@ -13,7 +13,7 @@
 import java.util.Scanner;
   
  /**
- * This class is associated with the first task of the fourth seminar
+ * This class is associated with the third task of the fourth seminar
  */
 public class Task0403 {
   public static void main(String[] args) {

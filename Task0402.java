@@ -11,7 +11,7 @@
  */
   
  /**
- * This class is associated with the first task of the fourth seminar
+ * This class is associated with the second task of the fourth seminar
  */
 public class Task0402 {
   public static String stars(int count) {
