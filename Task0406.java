@@ -17,32 +17,32 @@ import java.util.Scanner;
  */
 public class Task0406 {
   public static void main(String args[]) {		
-		Scanner is = new Scanner(System.in);
+    Scanner is = new Scanner(System.in);
 		
-		float[][] experimentResults = new float[3][4];
-		float[] experimentAverages = new float[3];
+    float[][] experimentResults = new float[3][4];
+    float[] experimentAverages = new float[3];
 		
-		for (int i = 0; i < 3; i++) {
-			for (int j = 0; j < 4; j++) {
-				while (true) {
-					System.out.printf("Type in result #%d for experiment #%d: ", j+1, i+1);
+    for (int i = 0; i < 3; i++) {
+      for (int j = 0; j < 4; j++) {
+        while (true) {
+          System.out.printf("Type in result #%d for experiment #%d: ", j+1, i+1);
 					
-					if (!is.hasNextFloat()) {
-						System.out.println("Invalid entry. Press Enter to try again...");
-						is.nextLine();
-						continue;
-					}
+          if (!is.hasNextFloat()) {
+            System.out.println("Invalid entry. Press Enter to try again...");
+            is.nextLine(); 
+            continue;
+          }
 					
-					experimentResults[i][j] = is.nextFloat();
-					experimentAverages[i] += experimentResults[i][j];
-					break;
-				}
-			}
-		}
+          experimentResults[i][j] = is.nextFloat();
+          experimentAverages[i] += experimentResults[i][j];
+          break;
+        }
+      }
+    }
 		
-		for (int i = 0; i < 3; i++)
-			System.out.printf("Avg result for experiment #%d: %.2f\n", i+1, experimentAverages[i] / 4);
+    for (int i = 0; i < 3; i++)
+      System.out.printf("Avg result for experiment #%d: %.2f\n", i+1, experimentAverages[i] / 4);
 		
-      is.close();
+    is.close();
 	}
 }

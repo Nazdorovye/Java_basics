@@ -16,17 +16,17 @@ import java.util.Scanner;
  * This class is associated with the second task of the fifth seminar
  */
 public class Task0502 {
-	public static long arraySum(int[] array) {
-		long result = 0;
+  public static long arraySum(int[] array) {
+    long result = 0;
 
-		for (int el : array) {
-			result += el;
-		}
+    for (int el : array) {
+      result += el;
+    }
 
-		return result;
-	}
+    return result;
+  }
 
-	public static int[] extractIntegers(String string) {
+  public static int[] extractIntegers(String string) {
     String[] items = string.split(" ");
     int arrayIndex = 0;
 
