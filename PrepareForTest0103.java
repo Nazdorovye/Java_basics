@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 /*
  * This file is a part of solutions for the Java Basics course in the
  *      Ventspils University of Applied Sciences.
@@ -11,6 +9,8 @@ import java.util.Scanner;
  *
  *  Copyright Vjazovcevs Stanislavs, 2020
  */
+
+import java.util.Scanner;
 
 /**
  * This class is associated with the third task of task sequence to prepare for test 01
