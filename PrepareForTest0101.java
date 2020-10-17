@@ -27,6 +27,7 @@ public class PrepareForTest0101 {
     int parsedInt = 0;
     int arrayIndex = 0;
 
+    // Counts valid elements in the input array to create output array of the correct length
     for (int i = 0; arrayIndex < targetLength && i < items.length; i++) {      
       if (items[i].matches("-?\\d+")) {
         parsedInt = Integer.parseInt(items[i]);
@@ -40,6 +41,7 @@ public class PrepareForTest0101 {
     int[] numbers = new int[arrayIndex];
     arrayIndex = 0;
 
+    // Parsing valid elements to the oyutput array
     for (int i = 0; arrayIndex < targetLength && i < items.length; i++) {      
       if (items[i].matches("-?\\d+")) {
         parsedInt = Integer.parseInt(items[i]);
@@ -52,7 +54,7 @@ public class PrepareForTest0101 {
 
     return numbers;
   }
-  
+
   public static void main(String[] args) {
     Scanner is = new Scanner(System.in);
     int[] numArray;
@@ -81,11 +83,12 @@ public class PrepareForTest0101 {
         continue;
       }
       
-      System.out.print("\nElement array is:");
-      
       smallest = numArray[0];
       largest = numArray[0];
+
+      System.out.print("\nElement array is:");      
       
+      // Prints elements od the array & calculates some values in parallel
       for (int i = 0; i < targetLength; i++) {
         System.out.printf("%s%d", (i != 0) ? ", " : " " , numArray[i]);
 
@@ -129,6 +132,7 @@ public class PrepareForTest0101 {
     int smallerThanMean = 0;
     int largerThanMean = 0;
 
+    // Prints square elements of the array & calculates ><(mean) in parallel
     for (int i = 0, j = 0; i < targetLength; i++) {
       if (numArray[i] > mean) {
         smallerThanMean++;
@@ -145,9 +149,9 @@ public class PrepareForTest0101 {
     System.out.printf("Count of elements larger than mean: %d\n", largerThanMean);        
     System.out.printf("Smallest element: %d\n", smallest);
     System.out.printf("Largest element: %d\n", largest);
-
     System.out.print("Elements that are divisible by 7:");
 
+    // Prints divisible by 7 elements of the array
     for (int i = 0, j = 0; i < targetLength; i++) {
       if (numArray[i] % 7 == 0) {
         System.out.printf("%s%d", (j++ != 0) ? ", " : " " , numArray[i]);
@@ -156,6 +160,7 @@ public class PrepareForTest0101 {
 
     System.out.print("\nElements with tailing zeros:");
 
+    // Prints elements of the array with tailing 0
     for (int i = 0, j = 0; i < targetLength; i++) {
       if (numArray[i] % 10 == 0 || numArray[i] == 0) {
         System.out.printf("%s%d", (j++ != 0) ? ", " : " " , numArray[i]);
@@ -164,6 +169,7 @@ public class PrepareForTest0101 {
 
     System.out.println("\nElements in two rows:");
 
+    // Prints elements of the array in two rows
     for (int i = 0; i < targetLength; i += 2) { 
       System.out.printf("%s%d", (i != 0) ? ", " : " " , numArray[i]);
     }
