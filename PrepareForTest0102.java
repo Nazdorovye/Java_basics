@@ -16,10 +16,13 @@ import java.util.Scanner;
  * This class is associated with the second task of task sequence to prepare for test 01
  */
 public class PrepareForTest0102 {
+  public static final int userNumCount = 5;
+
   public static void main(String[] args) {
     Scanner is = new Scanner(System.in);
     
-    System.out.println("This app takes in range start & end and finds if 5 numbers are in range\n");
+    System.out.printf("This app takes in range start&end and finds if %d numbers are in range\n\n",
+        userNumCount);
     
     int[] intervalBounds = new int[2];
     byte idx = 0;
@@ -45,7 +48,7 @@ public class PrepareForTest0102 {
     int[] userNumbers = new int[5];
     idx = 0;
 
-    while (idx < 5) {
+    while (idx < userNumCount) {
       System.out.printf("Type in integer for #%d -> ", idx + 1);
 
       if (is.hasNextInt()) {
@@ -57,10 +60,10 @@ public class PrepareForTest0102 {
       is.nextLine();
     }
 
-    System.out.printf("Numbers in range [%d..%d] are:", intervalBounds[0], intervalBounds[1]);
+    System.out.printf("\nNumbers in range [%d..%d] are:", intervalBounds[0], intervalBounds[1]);
     idx = 0;
 
-    for (int j = 0; idx < 5; idx++) {
+    for (int j = 0; idx < userNumCount; idx++) {
       if (userNumbers[idx] >= intervalBounds[0] && userNumbers[idx] <= intervalBounds[1]) {
         System.out.printf("%s%d", (j++ != 0) ? ", " : " ", userNumbers[idx]);
       }
